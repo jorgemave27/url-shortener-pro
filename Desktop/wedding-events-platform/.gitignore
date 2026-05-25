@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.next/
+out/
+.env
+.env.*
+!.env.example
+coverage/
+.terraform/
+*.tfstate
+*.tfstate.*
+.DS_Store
+.serverless/
+build/

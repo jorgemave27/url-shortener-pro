@@ -1,0 +1,33 @@
+[
+  {
+    "PK": "EVENT#123",
+    "SK": "METADATA",
+    "eventId": "123",
+    "title": "Boda Ana y Luis",
+    "date": "2026-10-10",
+    "place": "Hacienda San Miguel",
+    "brideName": "Ana",
+    "groomName": "Luis",
+    "publicInvitationUrl": "/invite/ABC123",
+    "eventCode": "EVENT2026"
+  },
+  {
+    "PK": "EVENT#123",
+    "SK": "GUEST#001",
+    "guestId": "001",
+    "name": "Juan Pérez",
+    "phone": "5512345678",
+    "email": "juan@email.com",
+    "passes": 2,
+    "table": "Mesa 5",
+    "status": "PENDING",
+    "inviteCode": "ABC123"
+  },
+  {
+    "PK": "INVITE#ABC123",
+    "SK": "RSVP",
+    "eventId": "123",
+    "guestId": "001",
+    "status": "PENDING"
+  }
+]

@@ -1,0 +1,13 @@
+name: Deploy Infra
+on:
+  workflow_dispatch:
+  push:
+    paths: ['infra/**']
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - run: terraform -chdir=infra/terraform/envs/dev init
+      - run: terraform -chdir=infra/terraform/envs/dev plan
