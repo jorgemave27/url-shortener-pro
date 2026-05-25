@@ -12,8 +12,6 @@ coverage/
 .DS_Store
 .serverless/
 build/
-
-
 # Python
 .venv/
 __pycache__/
